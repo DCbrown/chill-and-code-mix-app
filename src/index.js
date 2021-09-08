@@ -17,13 +17,13 @@ class AudioPlayer extends PureComponent {
   };
 
   static defaultProps = {
-    onTimeUpdate: () => {},
-    onEnded: () => {},
-    onError: () => {},
-    onPlay: () => {},
-    onPause: () => {},
-    onPrevious: () => {},
-    onNext: () => {},
+    onTimeUpdate: () => { },
+    onEnded: () => { },
+    onError: () => { },
+    onPlay: () => { },
+    onPause: () => { },
+    onPrevious: () => { },
+    onNext: () => { },
   };
 
   constructor(props) {
@@ -136,8 +136,8 @@ class AudioPlayer extends PureComponent {
     const newSongToPlay = repeat
       ? current
       : current < total - 1
-      ? current + 1
-      : 0;
+        ? current + 1
+        : 0;
     const active = songs[newSongToPlay];
 
     this.setState({
@@ -234,13 +234,6 @@ class AudioPlayer extends PureComponent {
 
     return (
       <div className="player-container">
-        <div
-          className={coverClass}
-          style={{
-            backgroundImage: `url(${currentSong.cover || ''})`,
-          }}
-        ></div>
-
         <div className="artist-info">
           <h2 className="artist-name">{currentSong.artist.name}</h2>
           <h3 className="artist-song-name">{currentSong.artist.song}</h3>
@@ -259,18 +252,18 @@ class AudioPlayer extends PureComponent {
         <div className="player-options">
           <div className="player-buttons player-controls">
             <button
-              onClick={this.toggle}
-              className="player-btn big"
-              title="Play/Pause"
-            >
-              <i className={playPauseClass}></i>
-            </button>
-            <button
               onClick={this.previous}
               className="player-btn medium"
               title="Previous Song"
             >
               <i className="fa fa-backward"></i>
+            </button>
+            <button
+              onClick={this.toggle}
+              className="player-btn big"
+              title="Play/Pause"
+            >
+              <i className={playPauseClass}></i>
             </button>
             <button
               onClick={this.next}

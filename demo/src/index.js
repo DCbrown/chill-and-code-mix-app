@@ -5,65 +5,24 @@ import AudioPlayer from '../../src';
 
 const songs = [
   {
-    url: 'http://tegos.kz/new/mp3_full/Redfoo_-_New_Thang.mp3',
-    cover:
-      'http://www.nossoarmario.com/blog/wp-content/uploads/2015/01/redfoo.jpg',
+    url: '../../src/playlist/Next-to-You.mp3',
     artist: {
-      name: 'Redfoo',
-      song: 'New Thang',
+      name: 'Next to You',
+      song: 'Flamingosis',
     },
   },
   {
-    url: 'http://a.tumblr.com/tumblr_lpoc6cHNDP1r0jthjo1.mp3',
-    cover:
-      'http://www.cmchatlive.com/scenic/wp-content/uploads/2015/05/hugo-99-problems-country-that.jpg',
+    url: '../../src/playlist/The-OneUps-Castlevania-II-Simon-Quest.mp3',
     artist: {
-      name: 'Hugo',
-      song: '99 Problems',
+      name: 'The OneUps',
+      song: 'Castlevaina II Simon Quest',
     },
   },
   {
-    url: 'http://claymore.france.free.fr/momo/summer love.mp3',
-    cover:
-      'http://myuvn.com/wp-content/uploads/2015/07/justin-timberlake-pusher-love-girl.jpg',
+    url: '../../src/playlist/The-OneUps-Street-Fighter-II-Sagat.mp3',
     artist: {
-      name: 'Justin Timberlake',
-      song: 'Summer Love',
-    },
-  },
-  {
-    url: 'http://a.tumblr.com/tumblr_mlyactVSyX1qejx3lo1.mp3',
-    cover:
-      'http://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2015/06/daft-punk.jpg',
-    artist: {
-      name: 'Daft Punk',
-      song: 'Get Lucky',
-    },
-  },
-  {
-    url: 'http://a.tumblr.com/tumblr_lxe7hpIUPA1r3ne4ro1.mp3',
-    artist: {
-      name: 'Michael Buble',
-      song: 'Feeling Good',
-    },
-  },
-  {
-    url:
-      'http://dl.tak3da.com/download/1394/03/The Weeknd - Can t Feel My Face [320].mp3',
-    cover:
-      'http://www.clickgratis.com.br/fotos-imagens/the-weekend/aHR0cDovL3d3dy5iaWxsYm9hcmQuY29tL2ZpbGVzL3N0eWxlcy9wcm9tb182NTAvcHVibGljL21lZGlhL3RoZS13ZWVrZW5kLXRoZS1oaWxscy12aWRlby1iaWxsYm9hcmQtNjUwLmpwZw==.jpg',
-    artist: {
-      name: 'The Weekend',
-      song: "Can't Fell My Face",
-    },
-  },
-  {
-    url:
-      'http://midnightoilco.net/sitebuildercontent/sitebuilderfiles/metallicafuel.mp3',
-    cover: 'http://imagens.ailhadometal.com/2015/03/Metallica3.png',
-    artist: {
-      name: 'Metallica',
-      song: 'Fuel',
+      name: 'The OneUps',
+      song: 'Street Fighter II Sagat Theme',
     },
   },
 ];
@@ -80,15 +39,11 @@ ReactDOM.render(
       type="text/css"
     />
 
-    <h1>CLAudioPlayer</h1>
+    <h1>Chill And Code Mix</h1>
     <h2>
-      <a href="https://github.com/cezarlz/react-cl-audio-player">
-        View project on GitHub
-      </a>
     </h2>
     <AudioPlayer songs={songs} />
-
-    <div class="footer">Copyright &copy; 2018 Cezar Luiz.</div>
+    <div class="footer">Inspired by <a class="author" href="https://github.com/cezarlz/react-cl-audio-player" target="_blank">Cezar Luiz.</a></div>
   </div>,
   document.querySelector('#demo')
 );

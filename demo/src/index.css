@@ -1,11 +1,18 @@
 * {
   box-sizing: border-box;
 }
+html {
+  background-image: url(../../src/background.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 25% 75%;
+  min-height: 100%;
+}
 body {
+  margin-top: 200px;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  color: #46546b;
-  background-image: radial-gradient(circle, #fff, #d2d5d6);
+  color: #ffffff;
 }
 .container > h1 {
   text-align: center;
@@ -22,9 +29,12 @@ body {
   color: #000;
 }
 .container .footer {
-    margin-top: 100px;
+  margin-top: 20px;
   text-align: center;
 }
 #demo {
   margin: 30px 0;
+}
+.author {
+  color: #ffffff;
 }
